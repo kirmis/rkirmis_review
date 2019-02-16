@@ -23,7 +23,7 @@ public class PowerSetData {
     NoSuchElementException, NegativeArraySizeException{
 
             StringTokenizer inputTokens = new StringTokenizer(string);
-            String[] RESULT = string.split("\s");
+            String[] RESULT = string.split("\\s"); // SER316 Assignment #4 - added another backslash to fix statement
 
             String str = "";
 
