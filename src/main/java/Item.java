@@ -1,9 +1,9 @@
 package main.java;
 
-public final class Item {
-        private int key; // SER316 Assignment #4 - made variable private and added getter and setter for it
+public final class Item<Key> {
+        private Key key; // SER316 Assignment #4 - made variable private and added getter and setter for it
         //constructor
-        public Item(int keyValue) { 
+        public Item(Key keyValue) { 
                 key = keyValue;
         }
         // further components and methods
@@ -15,7 +15,7 @@ public final class Item {
          * 
          * Description: Gets the key of the Item.
          */
-        	public int getKey()
+        	public Key getKey()
         	{
         		return key;
         	}
@@ -27,7 +27,7 @@ public final class Item {
          * 
          * Description: Sets the key of the Item.
          */
-        	public void setKey(int key)
+        	public void setKey(Key key)
         	{
         		this.key = key;
         	}
